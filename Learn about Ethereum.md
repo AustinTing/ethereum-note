@@ -36,3 +36,42 @@
 - 通常分散式的平台都是半成品，要需**PMF**
     - 平台和開發者造就一個生態系
     - 平台和終端使用者
+  
+### [The Year in Ethereum 2019](https://medium.com/@jjmstark/the-year-in-ethereum-2019-242012e4276d)
+
+2019年回顧，裡面有各項Ethereum應用的介紹和發展程度。
+
+- Ethereum經濟持續增長，最主要的是Defi，遊戲和DAOs（decentralized autonomous organizations ）也有看到早期成長的跡象。
+- DeFi元年：一個金融系統的另一個選擇，使用者可以透過網路直接控制自己的資產、負債、付款和投資。
+    - 穩定幣價機制。
+    - 群眾借款取得利息機制。
+    - 公開審核、透明且永不關閉的金融體系。
+- 乙太上的應用程式開始可以互動跟組合，把他們想成「錢的樂高」
+- 去中心交易所：
+    - Uniswap：使用者直接跟Uniswap protocol交易，全在鏈上完成。其他的DeFi protocol可以直接呼叫Uniswap protocol去進行交易，把Uniswap當作工具使用。
+    - DEXs、Kyber、0x。
+- 借貸服務：
+    - Compond、MakerDAO。
+- 穩定幣
+    - Tether從比特幣轉移至ETH，史上最大的鍊鍊轉移。
+- 基於乙太的資產
+    - TokenSets：例如ETH漲就幫客戶多持有ETH，ETH跌就自動換成穩定幣保值。
+    - Universal Market Access (UMA)：多種資產錨定現實資產，如股票。
+- 遊戲： 
+    - Gods Unchained，裡面用到一個技術NFT（非同質化代幣），這個說不定我們可以用到。
+    - PoolTogether：零損失的樂透遊戲。
+    - 遊戲跟金融的邊界漸漸消失，金融應用程式像遊戲，遊戲應用程式裡面有金融系統。
+- DAO（Decentralized Autonomous Organizations）
+    - 一個藉由定義好的自治原則來管理資產的程式。
+    - MolochDAO：會員可以決定要贊助哪一個專案。
+    - Saint Fame：會員決定要哪種設計的T-shirt，決定要不要賣，價格交由市場決定。買家買到token可以去換T-shirt。
+    - Aragon：一個開發DAO的框架和SDK。
+- NBA球星將自己的合約token化，讓大家可以買token並得到將來合約的分潤。
+- 明年ETH發行率會再減半。
+- ETH2:
+    - 從proof of work 轉成 proof of stake
+    - 更動太大，會分成不同階段推出
+- Layer 2 和鏈下技術
+    - 利用昂貴的鏈下運算，達到高速交易但又有乙太坊原有的安全性特色，適合那些需要scale up 的服務
+    - Connext：可以程式化的微支付應用，瀏覽器base
+
