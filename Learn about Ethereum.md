@@ -146,3 +146,45 @@
 - 當合約發送內部交易給合約時，接收方合約所關聯程式碼會被執行。
 - 訊息或內部交易不包含gasLimit，gasLimit是外部原始交易的發起者所制定。
 - 在一連串的訊息或內部交易中，如果某一個特定訊息或內部交易還沒完成時把gas消耗完，那一個訊息或內部交易會還原。但是它上一個訊息或內部交易則不會被還原。
+
+#### 區塊
+
+- 所有的交易被分組成區塊。區塊鏈就是一系列區塊被鏈在一起。
+- 一個區塊由以下部分組成：
+    - 區塊header。
+    - 一組交易的資訊。
+    - 針對這個區塊的ommers的一組其他區塊的headers。
+    
+##### 區塊header
+
+- Block header有以下組成：
+  - parentHash
+  - ommersHash
+  - beneficiary：因為挖礦而收到費用的帳戶address。
+  - stateRoot
+  - transactionsRoot
+  - receiptsRoot
+  - logsBloom
+  - difficulty：這個區塊的難度。
+  - number：這是第幾的區塊，創世區塊是第零個。
+  - gasLimit
+  - gasUsed
+  - timestamp
+  - extraData
+  - mixHash
+  - nonce
+  
+##### Ommers
+與現在這個區塊有著相同parent的parent區塊，但又不是這在這個塊的prarent的區塊。（parent區塊的兄弟姊妹區塊）
+
+- 因為Ethereum出塊速度快，兩個礦工可能在同一個區塊後，同時各自產生新的區塊。其中一個在將來不會被納入主鏈，變成孤兒區塊。
+- 紀錄ommers是Ethereum對於挖出ommers的礦工的一點點獎勵，當作鼓勵。但只有從第一個孤兒區塊算起六個區塊內才有獎勵。
+
+##### 難度
+- 區塊的難度設計是為了要讓在驗證區塊的時間上達到一致性。
+- 藉由調整難度，protocol可以調節出塊的時間，平均每15秒一個區塊。
+
+
+
+
+
