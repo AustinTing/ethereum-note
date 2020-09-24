@@ -157,22 +157,7 @@
     
 ##### 區塊header
 
-- Block header有以下組成：
-  - parentHash
-  - ommersHash
-  - beneficiary：因為挖礦而收到費用的帳戶address。
-  - stateRoot
-  - transactionsRoot
-  - receiptsRoot
-  - logsBloom
-  - difficulty：這個區塊的難度。
-  - number：這是第幾的區塊，創世區塊是第零個。
-  - gasLimit
-  - gasUsed
-  - timestamp
-  - extraData
-  - mixHash
-  - nonce
+- 每一個區塊都有block header，block header由以下組成：parentHash、ommersHash、beneficiary（因為挖礦而收到費用的帳戶address）、stateRoot、transactionsRoot、receiptsRoot、logsBloom、difficulty（這個區塊的難度）、number（這是第幾的區塊，創世區塊是第0個）、gasLimit、gasUsed、timestamp、extraData、mixHash、nonce。
   
 ##### Ommers
 與現在這個區塊有著相同parent的parent區塊，但又不是這在這個塊的prarent的區塊。（parent區塊的兄弟姊妹區塊）
